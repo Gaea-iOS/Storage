@@ -1,0 +1,28 @@
+{
+  "name": "Storage",
+  "version": "0.1.0",
+  "summary": "A short description of Storage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wangxiaotao/Storage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wangxiaotao": "445242970@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/wangxiaotao/Storage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_version": "4.2",
+  "source_files": "Storage/Classes/**/*",
+  "dependencies": {
+    "Objective-LevelDB": [
+
+    ]
+  }
+}

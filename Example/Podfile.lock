@@ -1,0 +1,27 @@
+PODS:
+  - leveldb-library (1.18.3)
+  - Objective-LevelDB (2.1.5):
+    - leveldb-library (~> 1.18.2)
+  - Storage (0.1.0):
+    - Objective-LevelDB
+
+DEPENDENCIES:
+  - Storage (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - leveldb-library
+    - Objective-LevelDB
+
+EXTERNAL SOURCES:
+  Storage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
+  Objective-LevelDB: fa075efd9d0be645aee51847cc3ee70cdadb80ce
+  Storage: aae44d307a3cf63f1ada8e551db4a6ffb022a9fe
+
+PODFILE CHECKSUM: 238da9d699f791759cc2b31b97b286bd7ef1525e
+
+COCOAPODS: 1.5.3
