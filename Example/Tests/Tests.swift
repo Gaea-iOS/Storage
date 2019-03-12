@@ -42,13 +42,22 @@ class Tests: XCTestCase {
             let a = "haha"
             let b = 9823
         }
-        let a = A()
-        db1["a"] = a
-        XCTAssert(db1["a"] == a, "Pass")
+        let a1 = A()
+        let a2 = A()
+        db1["a"] = a1
+        XCTAssert(db1["a"] == a1, "Pass")
 
-        let array = [5, 6]
+        let array = [a1, a2]
         db1["array"] = array
         XCTAssert(db1["array"] == array, "Pass")
+
+        let dic = [5: a1, 7: a2]
+        db1["dic"] = dic
+        XCTAssert(db1["dic"] == dic, "Pass")
+
+        let set = Set([3,9,19])
+        db1["set"] = set
+        XCTAssert(db1["set"] == set, "Pass")
     }
     
     func testPerformanceExample() {

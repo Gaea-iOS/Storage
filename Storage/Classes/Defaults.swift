@@ -51,6 +51,7 @@ extension Defaults {
     private func save<T>(_ object: T, forKey key: String) throws where T: Encodable {
         let data = try object.archivedData()
         userDefaults.set(data, forKey: key)
+        userDefaults.synchronize()
     }
 
     private func fetchObject<T>(forKey key: String) throws -> T? where T: Decodable {
